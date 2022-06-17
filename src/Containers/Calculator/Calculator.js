@@ -52,7 +52,6 @@ const Calculator = () => {
     const removePersonFields = id => (
         setPeople(people.filter(p => p.id !== id))
     );
-
     const onChangeInputs = e => {
         const {name, value} = e.target;
         setSplit(prev => ({
@@ -63,7 +62,6 @@ const Calculator = () => {
 
     let calcSplit = null;
     let calcIndividual = null;
-
     if (showCheck) {
         calcSplit = (
             <div>
@@ -83,7 +81,6 @@ const Calculator = () => {
                 ))}
             </p>
         )
-
     }
 
     const calculationSplit = e => {
